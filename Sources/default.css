@@ -9,7 +9,6 @@
 body			{ padding: 8px; line-height: 1.0em; margin: 0.83em 0; font-family: serif; font-size: medium; }
 
 /* define specific display style (default is "inline") */
-
 html, address,
 blockquote, 
 body, dd, div, 
@@ -70,7 +69,7 @@ q				{ x-before: '"'; }
 q				{ x-after: '"'; }
 
 /* translation of HTML tag attributes to style properties */
-
+*[title]			{ x-tooltip: attr(title); }
 body[text]			{ color: attr(text, color); }
 body[bgcolor]		{ background-color: attr(bgcolor, color); }
 body[background]	{ background-image: attr(background, url); }
@@ -134,7 +133,9 @@ dd				{ }
 table[border]			{ border: attr(border); }
 table[width], tr[width],
 td[width], th[width]	{ width: attr(width, px); }
-td[valign], th[valign]	{ vertical-align: attr(valign); }
+td[valign], th[valign]	{ x-vertical-align: attr(valign); }	/* not the same as vertical-align! */
+td[colspan], th[colspan]	{ column-span: attr(colspan); }
+td[rowspan], th[rowspan]	{ row-span: attr(rowspan); }
 
 /* forms */
 input					{ x-editable: yes; x-text-columns: attr(size, number, 20); x-text-lines: 1; }
