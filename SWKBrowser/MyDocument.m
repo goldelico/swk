@@ -569,7 +569,8 @@
 		[destinations addObject:@"javascript:alert(\"hello world.\")"];	// special URL
 		[destinations addObject:@"http://lcamtuf.coredump.cx/cross_fuzz/"];	// DOM fuzzing security check
 		[destinations addObject:@"-- CSS --"];
-		[destinations addObject:@"http://www.compucraft.com.au/dev/DisableStyles.htm"];		
+		[destinations addObject:@"http://www.compucraft.com.au/dev/DisableStyles.htm"];
+		[destinations addObject:@"http://www.csstutorial.net/wp-content/uploads/2010/03/background02.html"];
 		[destinations addObject:@"-- important public pages --"];
 		[destinations addObject:@"http://www.quantum-step.com"];
 		[destinations addObject:@"http://www.gnustep.org"];
