@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -33,7 +33,7 @@
 		EE05407F1727C2BC0004EA72 /* DemoHTML in Resources */ = {isa = PBXBuildFile; fileRef = EE8A012B0B6CD10D00346917 /* DemoHTML */; };
 		EE0540801727C2BC0004EA72 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = EE5EBB590A188F970045B88D /* MainMenu.nib */; };
 		EE0540811727C2BC0004EA72 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
-		EE0540831727C2BC0004EA72 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EE0540831727C2BC0004EA72 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; };
 		EE0540851727C2BC0004EA72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5B0A188F970045B88D /* main.m */; };
 		EE0540861727C2BC0004EA72 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5D0A188F970045B88D /* MyApplication.m */; };
 		EE0540871727C2BC0004EA72 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
@@ -47,7 +47,7 @@
 		EE1AB3940C20544A005F3F98 /* DemoHTML in Resources */ = {isa = PBXBuildFile; fileRef = EE8A012B0B6CD10D00346917 /* DemoHTML */; };
 		EE1AB3950C20544A005F3F98 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = EE5EBB590A188F970045B88D /* MainMenu.nib */; };
 		EE1AB3960C20544A005F3F98 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
-		EE1AB3980C20544A005F3F98 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EE1AB3980C20544A005F3F98 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; };
 		EE1AB39A0C20544A005F3F98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5B0A188F970045B88D /* main.m */; };
 		EE1AB39B0C20544A005F3F98 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5D0A188F970045B88D /* MyApplication.m */; };
 		EE1AB39C0C20544A005F3F98 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
@@ -212,7 +212,7 @@
 		EEE9B0D30BC8280700757F02 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
 		EEE9B0DA0BC828EA00757F02 /* MyComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */; };
 		EEE9B0DB0BC828EA00757F02 /* MyComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */; };
-		EEE9B4A80BC9295C00757F02 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EEE9B4A80BC9295C00757F02 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; };
 		EEE9B5AC0BC9621900757F02 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
 		EEE9B5AD0BC9621900757F02 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
 		EEFA5A850E288A2600B86693 /* WebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFA5A840E288A2500B86693 /* WebPlugin.m */; };
@@ -918,10 +918,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
-				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = EEEB9D6B09A7586C00626AB7 /* Build configuration list for PBXProject "SimpleWebKit" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -1253,7 +1252,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1263,7 +1263,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SWKBrowser/FullWebKitTest-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1285,14 +1285,15 @@
 		EE01D4630B7786570089A538 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SimpleBrowser/FullWebKitTest-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1311,7 +1312,8 @@
 		EE0540901727C2BC0004EA72 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1320,7 +1322,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1340,14 +1342,15 @@
 		EE0540911727C2BC0004EA72 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1366,7 +1369,8 @@
 		EE147E890A1666A700E60AF8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1375,7 +1379,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1395,14 +1399,15 @@
 		EE147E8A0A1666A700E60AF8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1421,7 +1426,8 @@
 		EE1AB3A50C20544A005F3F98 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -1430,7 +1436,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "/Users/hns/Documents/Projects/QuantumSTEP/System/Sources/Frameworks/SimpleWebKit/SWKBrowser/SWKBrowser-Info copy.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1441,7 +1447,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				SYMROOT = "$(HOME)/build";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -1451,14 +1457,15 @@
 		EE1AB3A60C20544A005F3F98 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "/Users/hns/Documents/Projects/QuantumSTEP/System/Sources/Frameworks/SimpleWebKit/SWKBrowser/SWKBrowser-Info copy.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -1469,7 +1476,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SimpleBrowser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1500,7 +1507,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1512,7 +1520,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = "";
@@ -1537,7 +1545,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1546,7 +1555,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				OTHER_CFLAGS = "";
@@ -1570,7 +1579,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1582,7 +1592,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = "";
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = "";
@@ -1607,7 +1617,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1616,7 +1627,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = "";
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				OTHER_CFLAGS = "";
@@ -1639,15 +1650,17 @@
 		EEEB9D6C09A7586C00626AB7 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				PREBINDING = NO;
-				SDKROOT = macosx10.9;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Development;
 		};
 		EEEB9D6D09A7586C00626AB7 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = macosx10.9;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Deployment;
 		};
