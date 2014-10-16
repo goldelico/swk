@@ -302,7 +302,7 @@
 		EE147E840A16668700E60AF8 /* SWKBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWKBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1AB3A70C20544A005F3F98 /* SWKBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWKBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE24FD190C209B37001947BB /* DOMHTML.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DOMHTML.plist; sourceTree = "<group>"; };
-		EE27270005426A7F0000013C /* mySTEP.make */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = mySTEP.make; path = ../mySTEP.make; sourceTree = SOURCE_ROOT; };
+		EE27270005426A7F0000013C /* mySTEP.make */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = mySTEP.make; path = ../mySTEP.make; sourceTree = SOURCE_ROOT; usesTabs = 1; };
 		EE291C030AD780EE004A1CA6 /* WebDOMOperations.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WebDOMOperations.m; sourceTree = "<group>"; };
 		EE291C080AD78194004A1CA6 /* WebScriptObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WebScriptObject.m; sourceTree = "<group>"; };
 		EE428B340A4819A2003437D2 /* WebResource.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WebResource.h; sourceTree = "<group>"; };
