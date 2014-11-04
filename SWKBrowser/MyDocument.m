@@ -268,7 +268,9 @@
     {
         NSTextStorage *t=[(NSTextView *) [[[webView mainFrame] frameView] documentView] textStorage];
         NSData *d=[NSKeyedArchiver archivedDataWithRootObject:t];
-        [d writeToURL:[s URL] atomically:YES];
+		id list =[NSPropertyListSerialization propertyListWithData:d options:0 format:NULL error:NULL];
+		d=[NSPropertyListSerialization dataWithPropertyList:list format:NSPropertyListXMLFormat_v1_0 options:0 error:NULL];	// always save as XML
+		[d writeToURL:[s URL] atomically:YES];
     }
 }
 
