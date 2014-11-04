@@ -715,7 +715,7 @@
 		if(item == nil)
 			NSLog(@"oitem %@ %p", oitem, oitem);
 		else
-			[styleNodes addObject:item];
+			[styleNodes addObject:item];	// retain them whatever happens
 		return item;
 		}
 	if(outlineView == domTree)
@@ -754,7 +754,7 @@
 		if(item == nil)
 			{
 			[styleNodes release];
-			styleNodes=[[NSMutableArray alloc] initWithCapacity:30];
+			styleNodes=[[NSMutableSet alloc] initWithCapacity:30];
 			item=[self styleSheet];
 			}
 		if([item isKindOfClass:[NSString class]])
@@ -772,7 +772,7 @@
 		if (item == nil)
 			{
 			[domNodes release];
-			domNodes=[[NSMutableArray alloc] initWithCapacity:30];
+			domNodes=[[NSMutableSet alloc] initWithCapacity:30];
 			return 1;
 			}
 		else
