@@ -781,7 +781,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = EEEB9D6B09A7586C00626AB7 /* Build configuration list for PBXProject "SimpleWebKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -879,7 +879,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# ./SWKBrowser.qcodeproj\n";
+			shellScript = "./SWKBrowser.qcodeproj\n";
 		};
 		EE6FE354076F05C9009CC969 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -892,7 +892,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# ./SimpleWebKit.qcodeproj\n";
+			shellScript = "./SimpleWebKit.qcodeproj\n";
 		};
 		EEAA53860DDB4F6E00D42522 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1310,15 +1310,17 @@
 		EEEB9D6C09A7586C00626AB7 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
 		EEEB9D6D09A7586C00626AB7 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SDKROOT = macosx10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
