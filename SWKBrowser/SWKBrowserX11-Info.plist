@@ -95,15 +95,15 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>SWKBrowser</string>
+	<string>SWKBrowserX11</string>
 	<key>CFBundleGetInfoString</key>
-	<string>SWK Browser 1.0</string>
+	<string>SWK Browser X11 1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.GNUstep.Projects.SimpleWebKit.SWKBrowser</string>
+	<string>org.GNUstep.Projects.SimpleWebKit.SWKBrowserX11</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SWKBrowser</string>
+	<string>SWKBrowser X11</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
