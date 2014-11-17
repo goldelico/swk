@@ -32,13 +32,21 @@
 		EE044A930CF0A0040003D697 /* WebPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = EE044A910CF0A0040003D697 /* WebPreferences.m */; };
 		EE1396B50BA5B0EE00A9A16C /* WebDocumentRepresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE1396B30BA5B0EE00A9A16C /* WebDocumentRepresentation.h */; };
 		EE1396B60BA5B0EE00A9A16C /* WebDocumentRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1396B40BA5B0EE00A9A16C /* WebDocumentRepresentation.m */; };
+		EE139CE61A193C6800546945 /* DemoHTML in Resources */ = {isa = PBXBuildFile; fileRef = EE8A012B0B6CD10D00346917 /* DemoHTML */; };
+		EE139CE71A193C6800546945 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = EE5EBB590A188F970045B88D /* MainMenu.nib */; };
+		EE139CE81A193C6800546945 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
+		EE139CEA1A193C6800546945 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EE139CEC1A193C6800546945 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5B0A188F970045B88D /* main.m */; };
+		EE139CED1A193C6800546945 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5D0A188F970045B88D /* MyApplication.m */; };
+		EE139CEE1A193C6800546945 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
+		EE139CEF1A193C6800546945 /* MyComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */; };
+		EE139CF31A193C6800546945 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4536030A166D7F00C660D5 /* Foundation.framework */; };
 		EE24FD1A0C209B37001947BB /* DOMHTML.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE24FD190C209B37001947BB /* DOMHTML.plist */; };
 		EE291C040AD780EE004A1CA6 /* WebDOMOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = EE291C030AD780EE004A1CA6 /* WebDOMOperations.m */; };
 		EE291C090AD78194004A1CA6 /* WebScriptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE291C080AD78194004A1CA6 /* WebScriptObject.m */; };
 		EE428B360A4819A2003437D2 /* WebResource.h in Headers */ = {isa = PBXBuildFile; fileRef = EE428B340A4819A2003437D2 /* WebResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE428B370A4819A2003437D2 /* WebResource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE428B350A4819A2003437D2 /* WebResource.m */; };
 		EE443FBE0BDBE6B80031F556 /* HTMLEntities.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE443FBD0BDBE6B80031F556 /* HTMLEntities.strings */; };
-		EE45352C0A166B6200C660D5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; };
 		EE45355D0A166D6F00C660D5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45355C0A166D6F00C660D5 /* AppKit.framework */; };
 		EE45355E0A166D6F00C660D5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45355C0A166D6F00C660D5 /* AppKit.framework */; };
 		EE4536040A166D7F00C660D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4536030A166D7F00C660D5 /* Foundation.framework */; };
@@ -202,9 +210,27 @@
 			remoteGlobalIDString = EE6FE351076F05AF009CC969;
 			remoteInfo = SimpleWebKit;
 		};
+		EE139CE41A193C6800546945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6FE351076F05AF009CC969;
+			remoteInfo = SimpleWebKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EE139CE91A193C6800546945 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE139CEA1A193C6800546945 /* WebKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEE9B4A20BC9294200757F02 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +253,11 @@
 		EE044A910CF0A0040003D697 /* WebPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPreferences.m; sourceTree = "<group>"; };
 		EE1396B30BA5B0EE00A9A16C /* WebDocumentRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDocumentRepresentation.h; sourceTree = "<group>"; };
 		EE1396B40BA5B0EE00A9A16C /* WebDocumentRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDocumentRepresentation.m; sourceTree = "<group>"; };
+		EE139CE01A193C4800546945 /* SWKBrowserX11.qcodeproj */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SWKBrowserX11.qcodeproj; sourceTree = "<group>"; };
+		EE139CE11A193C5300546945 /* WKBrowser.qcodeproj */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = WKBrowser.qcodeproj; sourceTree = "<group>"; };
+		EE139CF91A193C6800546945 /* SWKBrowserX11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWKBrowserX11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE139CFC1A19434E00546945 /* SWKBrowserX11-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SWKBrowserX11-Info.plist"; sourceTree = "<group>"; };
+		EE139CFD1A19434E00546945 /* WKBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WKBrowser-Info.plist"; sourceTree = "<group>"; };
 		EE147E840A16668700E60AF8 /* SWKBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWKBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE24FD190C209B37001947BB /* DOMHTML.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DOMHTML.plist; sourceTree = "<group>"; };
 		EE27270005426A7F0000013C /* mySTEP.make */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = mySTEP.make; path = ../mySTEP.make; sourceTree = SOURCE_ROOT; usesTabs = 1; };
@@ -250,7 +281,6 @@
 		EE5EBB5B0A188F970045B88D /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE5EBB5C0A188F970045B88D /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyApplication.h; sourceTree = "<group>"; };
 		EE5EBB5D0A188F970045B88D /* MyApplication.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyApplication.m; sourceTree = "<group>"; };
-		EE5EBB5E0A188F970045B88D /* FullWebKitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "FullWebKitTest-Info.plist"; sourceTree = "<group>"; };
 		EE5EBC7F0A1926F00045B88D /* Private.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
 		EE5EBCDE0A1A4CB70045B88D /* WebDOMOperations.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WebDOMOperations.h; sourceTree = "<group>"; };
 		EE5EBCDF0A1A4CB70045B88D /* WebScriptObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WebScriptObject.h; sourceTree = "<group>"; };
@@ -330,10 +360,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE01D45D0B7786570089A538 /* AppKit.framework in Frameworks */,
-				EE01D45E0B7786570089A538 /* Foundation.framework in Frameworks */,
-				EE01D45F0B7786570089A538 /* Cocoa.framework in Frameworks */,
 				EE01D46D0B7786930089A538 /* WebKit.framework in Frameworks */,
+				EE01D45E0B7786570089A538 /* Foundation.framework in Frameworks */,
+				EE01D45D0B7786570089A538 /* AppKit.framework in Frameworks */,
+				EE01D45F0B7786570089A538 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE139CF01A193C6800546945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE139CF31A193C6800546945 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +379,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE45352C0A166B6200C660D5 /* WebKit.framework in Frameworks */,
 				EE45355D0A166D6F00C660D5 /* AppKit.framework in Frameworks */,
 				EE4536040A166D7F00C660D5 /* Foundation.framework in Frameworks */,
 				EE4537040A166D9A00C660D5 /* Cocoa.framework in Frameworks */,
@@ -376,7 +413,9 @@
 			children = (
 				EE27270005426A7F0000013C /* mySTEP.make */,
 				EEF7EAE316DB51E500CD94B5 /* SimpleWebKit.qcodeproj */,
+				EE139CE11A193C5300546945 /* WKBrowser.qcodeproj */,
 				EEF7EAE416DB51E500CD94B5 /* SWKBrowser.qcodeproj */,
+				EE139CE01A193C4800546945 /* SWKBrowserX11.qcodeproj */,
 				EE8721B30D0214A900B2037D /* GNUmakefile */,
 				EE4440B30BDBEA980031F556 /* ChangeLog */,
 				EEFA7D870E29FFEF00B86693 /* README */,
@@ -408,6 +447,7 @@
 				EE147E840A16668700E60AF8 /* SWKBrowser.app */,
 				EE8C14DC0C8AAF9000FFBD30 /* WebKitBrowser.app */,
 				EE7C19CA15D0339C004127D0 /* WebKit.framework */,
+				EE139CF91A193C6800546945 /* SWKBrowserX11.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -450,8 +490,9 @@
 				EEE9B0D10BC8280700757F02 /* MyDocument.m */,
 				EEE9B0D80BC828EA00757F02 /* MyComboBoxCell.h */,
 				EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */,
-				EE5EBB5E0A188F970045B88D /* FullWebKitTest-Info.plist */,
+				EE139CFD1A19434E00546945 /* WKBrowser-Info.plist */,
 				EE01D4670B7786570089A538 /* SWKBrowser-Info.plist */,
+				EE139CFC1A19434E00546945 /* SWKBrowserX11-Info.plist */,
 			);
 			path = SWKBrowser;
 			sourceTree = "<group>";
@@ -697,22 +738,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EE01D4520B7786570089A538 /* SWK Browser linked to System WebKit */ = {
+		EE01D4520B7786570089A538 /* WK Browser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "SWK Browser linked to System WebKit" */;
+			buildConfigurationList = EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WK Browser" */;
 			buildPhases = (
-				EEAA53860DDB4F6E00D42522 /* ShellScript */,
 				EE01D4550B7786570089A538 /* Resources */,
 				EE01D4580B7786570089A538 /* Sources */,
 				EE01D45B0B7786570089A538 /* Frameworks */,
+				EE139CFB1A193FAD00546945 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SWK Browser linked to System WebKit";
+			name = "WK Browser";
 			productName = WebKitTest;
 			productReference = EE8C14DC0C8AAF9000FFBD30 /* WebKitBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE139CE21A193C6800546945 /* SWK Browser X11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWK Browser X11" */;
+			buildPhases = (
+				EE139CE51A193C6800546945 /* Resources */,
+				EE139CE91A193C6800546945 /* Copy Frameworks */,
+				EE139CEB1A193C6800546945 /* Sources */,
+				EE139CF01A193C6800546945 /* Frameworks */,
+				EE139CF51A193C6800546945 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE139CE31A193C6800546945 /* PBXTargetDependency */,
+			);
+			name = "SWK Browser X11";
+			productName = WebKitTest;
+			productReference = EE139CF91A193C6800546945 /* SWKBrowserX11.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EE147E830A16668700E60AF8 /* SWK Browser */ = {
@@ -800,8 +861,9 @@
 			targets = (
 				EE6FE351076F05AF009CC969 /* SimpleWebKit */,
 				EE7C197815D0339C004127D0 /* SimpleWebKit without cross-compile */,
+				EE01D4520B7786570089A538 /* WK Browser */,
 				EE147E830A16668700E60AF8 /* SWK Browser */,
-				EE01D4520B7786570089A538 /* SWK Browser linked to System WebKit */,
+				EE139CE21A193C6800546945 /* SWK Browser X11 */,
 				EE29B0681205617B00B8C7CA /* Commit CVS */,
 			);
 		};
@@ -815,6 +877,16 @@
 				EEE9A52E0BC42AF200757F02 /* DemoHTML in Resources */,
 				EE01D4560B7786570089A538 /* MainMenu.nib in Resources */,
 				EEE9B5AD0BC9621900757F02 /* MyDocument.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE139CE51A193C6800546945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE139CE61A193C6800546945 /* DemoHTML in Resources */,
+				EE139CE71A193C6800546945 /* MainMenu.nib in Resources */,
+				EE139CE81A193C6800546945 /* MyDocument.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,6 +927,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		EE139CF51A193C6800546945 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./SWKBrowserX11.qcodeproj\n";
+		};
+		EE139CFB1A193FAD00546945 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./WKBrowser.qcodeproj\n";
+		};
 		EE29B0671205617B00B8C7CA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -894,19 +992,6 @@
 			shellPath = /bin/sh;
 			shellScript = "./SimpleWebKit.qcodeproj\n";
 		};
-		EEAA53860DDB4F6E00D42522 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "rm -rf \"$BUILT_PRODUCTS_DIR/WebKit.framework\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -918,6 +1003,17 @@
 				EE01D45A0B7786570089A538 /* MyApplication.m in Sources */,
 				EEE9B0D30BC8280700757F02 /* MyDocument.m in Sources */,
 				EEE9B0DB0BC828EA00757F02 /* MyComboBoxCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE139CEB1A193C6800546945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE139CEC1A193C6800546945 /* main.m in Sources */,
+				EE139CED1A193C6800546945 /* MyApplication.m in Sources */,
+				EE139CEE1A193C6800546945 /* MyDocument.m in Sources */,
+				EE139CEF1A193C6800546945 /* MyComboBoxCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1106,11 @@
 			target = EE6FE351076F05AF009CC969 /* SimpleWebKit */;
 			targetProxy = EE05409E1727C2EB0004EA72 /* PBXContainerItemProxy */;
 		};
+		EE139CE31A193C6800546945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6FE351076F05AF009CC969 /* SimpleWebKit */;
+			targetProxy = EE139CE41A193C6800546945 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1047,7 +1148,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "SWKBrowser/FullWebKitTest-Info.plist";
+				INFOPLIST_FILE = "SWKBrowser/WKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -1076,7 +1177,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "SimpleBrowser/FullWebKitTest-Info.plist";
+				INFOPLIST_FILE = "SWKBrowser/WKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -1086,6 +1187,63 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = WebKitBrowser;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		EE139CF71A193C6800546945 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SWKBrowserX11;
+				SYMROOT = "$(HOME)/build";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		EE139CF81A193C6800546945 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SWKBrowserX11;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1106,11 +1264,11 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
@@ -1133,14 +1291,14 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = SimpleBrowser;
+				PRODUCT_NAME = SWKBrowser;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1187,10 +1345,7 @@
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x20200000,
-				);
+				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
@@ -1221,10 +1376,7 @@
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x20200000,
-				);
+				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
@@ -1256,11 +1408,9 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x20200000,
-				);
+				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
@@ -1290,11 +1440,9 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x20200000,
-				);
+				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
@@ -1327,11 +1475,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "SWK Browser linked to System WebKit" */ = {
+		EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WK Browser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE01D4620B7786570089A538 /* Development */,
 				EE01D4630B7786570089A538 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWK Browser X11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE139CF71A193C6800546945 /* Development */,
+				EE139CF81A193C6800546945 /* Deployment */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
