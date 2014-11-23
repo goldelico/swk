@@ -35,7 +35,6 @@
 		EE139CE61A193C6800546945 /* DemoHTML in Resources */ = {isa = PBXBuildFile; fileRef = EE8A012B0B6CD10D00346917 /* DemoHTML */; };
 		EE139CE71A193C6800546945 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = EE5EBB590A188F970045B88D /* MainMenu.nib */; };
 		EE139CE81A193C6800546945 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
-		EE139CEA1A193C6800546945 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EE139CEC1A193C6800546945 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5B0A188F970045B88D /* main.m */; };
 		EE139CED1A193C6800546945 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5EBB5D0A188F970045B88D /* MyApplication.m */; };
 		EE139CEE1A193C6800546945 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
@@ -196,7 +195,6 @@
 		EEE9B0D30BC8280700757F02 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D10BC8280700757F02 /* MyDocument.m */; };
 		EEE9B0DA0BC828EA00757F02 /* MyComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */; };
 		EEE9B0DB0BC828EA00757F02 /* MyComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9B0D90BC828EA00757F02 /* MyComboBoxCell.m */; };
-		EEE9B4A80BC9295C00757F02 /* WebKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EE6FE352076F05AF009CC969 /* WebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EEE9B5AC0BC9621900757F02 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
 		EEE9B5AD0BC9621900757F02 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEE9B5AA0BC9621900757F02 /* MyDocument.nib */; };
 		EEFA5A850E288A2600B86693 /* WebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFA5A840E288A2500B86693 /* WebPlugin.m */; };
@@ -218,31 +216,6 @@
 			remoteInfo = SimpleWebKit;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EE139CE91A193C6800546945 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EE139CEA1A193C6800546945 /* WebKit.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEE9B4A20BC9294200757F02 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EEE9B4A80BC9295C00757F02 /* WebKit.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE01D4670B7786570089A538 /* SWKBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SWKBrowser-Info.plist"; sourceTree = "<group>"; };
@@ -761,7 +734,6 @@
 			buildConfigurationList = EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWK Browser X11" */;
 			buildPhases = (
 				EE139CE51A193C6800546945 /* Resources */,
-				EE139CE91A193C6800546945 /* Copy Frameworks */,
 				EE139CEB1A193C6800546945 /* Sources */,
 				EE139CF01A193C6800546945 /* Frameworks */,
 				EE139CF51A193C6800546945 /* ShellScript */,
@@ -781,7 +753,6 @@
 			buildConfigurationList = EE147E880A1666A700E60AF8 /* Build configuration list for PBXNativeTarget "SWK Browser" */;
 			buildPhases = (
 				EE147E800A16668700E60AF8 /* Resources */,
-				EEE9B4A20BC9294200757F02 /* Copy Frameworks */,
 				EE147E810A16668700E60AF8 /* Sources */,
 				EE147E820A16668700E60AF8 /* Frameworks */,
 				EE453C8A0A166ECD00C660D5 /* ShellScript */,
@@ -1160,7 +1131,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = WebKitBrowser;
-				SYMROOT = "$(HOME)/build";
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1187,6 +1158,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = WebKitBrowser;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1197,6 +1169,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1216,7 +1189,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
-				SYMROOT = "$(HOME)/build";
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1227,6 +1200,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -1244,6 +1218,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1254,6 +1229,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1272,7 +1248,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
-				SYMROOT = "$(HOME)/build";
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1283,6 +1259,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -1299,6 +1276,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
