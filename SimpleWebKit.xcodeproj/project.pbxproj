@@ -47,11 +47,9 @@
 		EE428B370A4819A2003437D2 /* WebResource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE428B350A4819A2003437D2 /* WebResource.m */; };
 		EE443FBE0BDBE6B80031F556 /* HTMLEntities.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE443FBD0BDBE6B80031F556 /* HTMLEntities.strings */; };
 		EE45355D0A166D6F00C660D5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45355C0A166D6F00C660D5 /* AppKit.framework */; };
-		EE45355E0A166D6F00C660D5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45355C0A166D6F00C660D5 /* AppKit.framework */; };
 		EE4536040A166D7F00C660D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4536030A166D7F00C660D5 /* Foundation.framework */; };
 		EE4536050A166D7F00C660D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4536030A166D7F00C660D5 /* Foundation.framework */; };
 		EE4537040A166D9A00C660D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4537030A166D9A00C660D5 /* Cocoa.framework */; };
-		EE4537050A166D9A00C660D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4537030A166D9A00C660D5 /* Cocoa.framework */; };
 		EE4727080B99AC6500559020 /* DOMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4727070B99AC6500559020 /* DOMCore.m */; };
 		EE4729250B99D8F700559020 /* DOMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4729240B99D8F700559020 /* DOMCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE475F400B9AF3B600559020 /* WebHTMLDocumentView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE475F3E0B9AF3B600559020 /* WebHTMLDocumentView.h */; };
@@ -362,9 +360,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE45355E0A166D6F00C660D5 /* AppKit.framework in Frameworks */,
 				EE4536050A166D7F00C660D5 /* Foundation.framework in Frameworks */,
-				EE4537050A166D9A00C660D5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,7 +905,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./SWKBrowserX11.qcodeproj\n";
+			shellScript = "open /Applications/Utilities/XQuartz.app\nrm -f ~/Library/Caches/com.quantum-step.mySTEP.NSFonts.plist\n./SWKBrowserX11.qcodeproj\n";
 		};
 		EE139CFB1A193FAD00546945 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1176,7 +1172,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -1205,7 +1201,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -1386,9 +1382,13 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
@@ -1418,9 +1418,13 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					/usr/share/QuantumSTEP/System/Library/Frameworks,
+					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
 				SECTORDER_FLAGS = "";
