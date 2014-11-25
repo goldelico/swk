@@ -145,8 +145,8 @@ NSString *WebScriptException=@"WebScriptException";
 
 @implementation NSObject (WebScripting)
 
-// NIMP - we don't do that until we need it and understand the security implications (if a webscript can access any Cocoa class and method)
-// it appears that it is Full-WebKits way of bridging Cocoa objects to the JavaScript execution space
+// NIMP - we don't do that until we need it and understand the security implications (if a webscript can access any Obj-C class and method)
+// it appears that it is Full-WebKits way of bridging Obj-C objects to the JavaScript execution space
 
 + (BOOL) isKeyExcludedFromWebScript:(const char *) name; { return YES; }
 + (BOOL) isSelectorExcludedFromWebScript:(SEL) sel; { return YES; }

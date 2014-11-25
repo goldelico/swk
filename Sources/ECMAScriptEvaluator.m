@@ -349,7 +349,7 @@ static Class __boolClass;	// class cluster subclass for numberWithBool
 	if(![fn isKindOfClass:[WebScriptObject class]])
 		[self setException:@"TypeError"];
 	if(![fn respondsToSelector:@selector(_call:arguments:)])
-		{ // try to bridge to Cocoa objects
+		{ // try to bridge to Objective-C objects
 		NSString *fnname=[l getPropertyName];
 		SEL sel;
 		// FIXME:
