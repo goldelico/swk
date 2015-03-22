@@ -76,10 +76,9 @@ export SOURCES+=" Sources/DOMHTML.plist"
 export SOURCES+=" Sources/DOMHTMLColors.plist"
 export SOURCES+=" Sources/HTMLEntities.strings"
 export SOURCES+=" Sources/WebKitIMG.png"
-export SOURCES+=" SimpleWebKit-Info.plist"
 export SOURCES+=" Sources/NSXMLParser.m"
 export SOURCES+=" English.lproj"
 export WRAPPER_EXTENSION="framework"
 
-[ "$QuantumSTEP" ] || export QuantumSTEP=/usr/share/QuantumSTEP
-/usr/bin/make -f $QuantumSTEP/System/Sources/Frameworks/mySTEP.make $ACTION
+[ "$QuantumSTEP" ] || export QuantumSTEP="/usr/share/QuantumSTEP"
+"$QuantumSTEP/System/Sources/Frameworks/mySTEP.make" $ACTION
