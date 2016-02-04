@@ -1179,9 +1179,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
@@ -1208,9 +1208,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
@@ -1239,8 +1239,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
@@ -1267,8 +1267,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/WebKit.framework/WebKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
@@ -1386,8 +1386,8 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
@@ -1422,8 +1422,8 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-rpath",
-					/usr/share/QuantumSTEP/System/Library/Frameworks,
-					/usr/share/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
+					/usr/local/QuantumSTEP/System/Library/Frameworks,
+					/usr/local/QuantumSTEP/System/Library/Frameworks/AppKit.framework/AppKit,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
