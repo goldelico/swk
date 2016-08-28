@@ -9,10 +9,9 @@ export SOURCES+=" SWKBrowser/MyComboBoxCell.m"
 export SOURCES+=" SWKBrowser/MyDocument.m"
 export SOURCES+=" SWKBrowser/main.m"
 export SOURCES+=" SWKBrowser/DemoHTML"
-export SOURCES+=" SWKBrowser/SWebKitBrowser-Info.plist"
 export SOURCES+=" SimpleWebKit.qcodeproj"
 export SOURCES+=" SWKBrowser/English.lproj"
 export WRAPPER_EXTENSION="app"
 
 [ "$QuantumSTEP" ] || export QuantumSTEP="/usr/local/QuantumSTEP"
-/usr/bin/make -f "$QuantumSTEP/System/Sources/Frameworks/mySTEP.make" $ACTION
+"$QuantumSTEP/System/Sources/Frameworks/mySTEP.make" $ACTION
