@@ -1,3 +1,29 @@
+2020-05-29 Riccardo Mottola <rm@gnu.org>
+
+	* Sources/WebHTMLDocumentView.m
+	Update methods signatures with characterIndex from unsigned to NSUInteger.
+
+2017-08-20 Riccardo Mottola <rm@gnu.org>
+
+	* Sources/DOMCSS.m
+	Escape relative part before forming URL.
+
+2017-08-02 Riccardo Mottola <rm@gnu.org>
+
+	* Sources/WebHTMLDocumentView.m
+	store "auto" and "zero" with using -1 and 0 instead of a microscopic quantity.
+
+2014-11-04 Riccardo Mottola <rm@gnu.org>
+
+	* Sources/WebHTMLDocumentView.m
+	By Fred: Enable underlining and strikethrough for GNUstep, provide better fallback for old MacOS.
+
+2014-11-04 Riccardo Mottola <rm@gnu.org>
+
+	* Sources/DOMCSS.m
+	* Sources/WebHTMLDocumentView.m
+	Descend returns negative values, fix accordingly.
+
 2013-10-25..28  Nikolaus Schaller <hns@computer.org>
 
 	* fixed issues with CSS inherit and initial
