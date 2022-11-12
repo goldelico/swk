@@ -11,6 +11,7 @@ export SOURCES+=" SWKBrowser/main.m"
 export SOURCES+=" SWKBrowser/DemoHTML"
 export SOURCES+=" SimpleWebKit.qcodeproj"
 export SOURCES+=" SWKBrowser/English.lproj"
+export SOURCES+=" SWKBrowser/Info.plist"
 export WRAPPER_EXTENSION="app"
 
 [ "$QuantumSTEP" ] || export QuantumSTEP="/usr/local/QuantumSTEP"
