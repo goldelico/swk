@@ -26,9 +26,7 @@
 
 @class WebView, WebFrame, WebScriptObject;
 
-// used as frameLoadDelegate of WebView
-
-@interface NSObject (WebFrameLoadDelegate)
+@protocol WebFrameLoadDelegate
 
 - (void) webView:(WebView *) sender didReceiveTitle:(NSString *) title forFrame:(WebFrame *) frame;
 - (void) webView:(WebView *) sender didStartProvisionalLoadForFrame:(WebFrame *) frame;
@@ -38,7 +36,7 @@
 - (void) webView:(WebView *) sender willPerformClientRedirectToURL:(NSURL *) url delay:(NSTimeInterval) seconds fireDate:(NSDate *) date forFrame:(WebFrame *) frame;
 - (void) webView:(WebView *) sender didCancelClientRedirectForFrame:(WebFrame *) frame;
 
-	// not yet called
+// not yet called
 
 - (void) webView:(WebView *) sender didChangeLocationWithinPageForFrame:(WebFrame *) frame;
 - (void) webView:(WebView *) sender didFailLoadWithError:(NSError *) error forFrame:(WebFrame *) frame;
@@ -49,6 +47,11 @@
 - (void) webView:(WebView *) sender windowScriptObjectAvailable:(WebScriptObject *) script;	// deprecated in 10.4.11
 - (void) webView:(WebView *) sender didClearWindowObject:(WebScriptObject *) script forFrame:(WebFrame *) frame;	// introduced in 10.4.11
 
+@end
+
+// used as frameLoadDelegate of WebView
+
+@interface NSObject (WebFrameLoadDelegate) <WebFrameLoadDelegate>
 
 @end
 
