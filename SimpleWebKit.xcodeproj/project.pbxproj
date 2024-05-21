@@ -709,9 +709,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EE01D4520B7786570089A538 /* WK Browser */ = {
+		EE01D4520B7786570089A538 /* WKBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WK Browser" */;
+			buildConfigurationList = EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WKBrowser" */;
 			buildPhases = (
 				EE01D4550B7786570089A538 /* Resources */,
 				EE01D4580B7786570089A538 /* Sources */,
@@ -722,14 +722,14 @@
 			);
 			dependencies = (
 			);
-			name = "WK Browser";
+			name = WKBrowser;
 			productName = WebKitTest;
 			productReference = EE8C14DC0C8AAF9000FFBD30 /* WebKitBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE139CE21A193C6800546945 /* SWK Browser X11 */ = {
+		EE139CE21A193C6800546945 /* SWKBrowserX11 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWK Browser X11" */;
+			buildConfigurationList = EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWKBrowserX11" */;
 			buildPhases = (
 				EE139CE51A193C6800546945 /* Resources */,
 				EE139CEB1A193C6800546945 /* Sources */,
@@ -741,14 +741,14 @@
 			dependencies = (
 				EE139CE31A193C6800546945 /* PBXTargetDependency */,
 			);
-			name = "SWK Browser X11";
+			name = SWKBrowserX11;
 			productName = WebKitTest;
 			productReference = EE139CF91A193C6800546945 /* SWKBrowserX11.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE147E830A16668700E60AF8 /* SWK Browser */ = {
+		EE147E830A16668700E60AF8 /* SWKBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE147E880A1666A700E60AF8 /* Build configuration list for PBXNativeTarget "SWK Browser" */;
+			buildConfigurationList = EE147E880A1666A700E60AF8 /* Build configuration list for PBXNativeTarget "SWKBrowser" */;
 			buildPhases = (
 				EE147E800A16668700E60AF8 /* Resources */,
 				EE147E810A16668700E60AF8 /* Sources */,
@@ -759,7 +759,7 @@
 			dependencies = (
 				EE05409F1727C2EB0004EA72 /* PBXTargetDependency */,
 			);
-			name = "SWK Browser";
+			name = SWKBrowser;
 			productName = WebKitTest;
 			productReference = EE147E840A16668700E60AF8 /* SWKBrowser.app */;
 			productType = "com.apple.product-type.application";
@@ -827,9 +827,9 @@
 			targets = (
 				EE6FE351076F05AF009CC969 /* SimpleWebKit */,
 				EE7C197815D0339C004127D0 /* SimpleWebKit without cross-compile */,
-				EE01D4520B7786570089A538 /* WK Browser */,
-				EE147E830A16668700E60AF8 /* SWK Browser */,
-				EE139CE21A193C6800546945 /* SWK Browser X11 */,
+				EE01D4520B7786570089A538 /* WKBrowser */,
+				EE147E830A16668700E60AF8 /* SWKBrowser */,
+				EE139CE21A193C6800546945 /* SWKBrowserX11 */,
 				EE29B0681205617B00B8C7CA /* Commit CVS */,
 			);
 		};
@@ -1435,7 +1435,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WK Browser" */ = {
+		EE01D4610B7786570089A538 /* Build configuration list for PBXNativeTarget "WKBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE01D4620B7786570089A538 /* Development */,
@@ -1444,7 +1444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWK Browser X11" */ = {
+		EE139CF61A193C6800546945 /* Build configuration list for PBXNativeTarget "SWKBrowserX11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE139CF71A193C6800546945 /* Development */,
@@ -1453,7 +1453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		EE147E880A1666A700E60AF8 /* Build configuration list for PBXNativeTarget "SWK Browser" */ = {
+		EE147E880A1666A700E60AF8 /* Build configuration list for PBXNativeTarget "SWKBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE147E890A1666A700E60AF8 /* Development */,
