@@ -3,7 +3,7 @@
    LastUpgradeVersion = "1530"
    version = "1.7">
    <BuildAction
-      parallelizeBuildables = "NO"
+      parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
       <PostActions>
@@ -11,13 +11,13 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;cd $PROJECT_DIR&#10;./WKBrowser.qcodeproj&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;cd $PROJECT_DIR&#10;./SimpleWebKit without cross-compile.qcodeproj&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "EE01D4520B7786570089A538"
-                     BuildableName = "WebKitBrowser.app"
-                     BlueprintName = "WKBrowser"
+                     BlueprintIdentifier = "EE7C197815D0339C004127D0"
+                     BuildableName = "WebKit.framework"
+                     BlueprintName = "SimpleWebKit without cross-compile"
                      ReferencedContainer = "container:SimpleWebKit.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -33,9 +33,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE01D4520B7786570089A538"
-               BuildableName = "WebKitBrowser.app"
-               BlueprintName = "WKBrowser"
+               BlueprintIdentifier = "EE7C197815D0339C004127D0"
+               BuildableName = "WebKit.framework"
+               BlueprintName = "SimpleWebKit without cross-compile"
                ReferencedContainer = "container:SimpleWebKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,16 +59,6 @@
       debugServiceExtension = "internal"
       enableGPUValidationMode = "1"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE01D4520B7786570089A538"
-            BuildableName = "WebKitBrowser.app"
-            BlueprintName = "WKBrowser"
-            ReferencedContainer = "container:SimpleWebKit.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Deployment"
@@ -76,16 +66,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE01D4520B7786570089A538"
-            BuildableName = "WebKitBrowser.app"
-            BlueprintName = "WKBrowser"
+            BlueprintIdentifier = "EE7C197815D0339C004127D0"
+            BuildableName = "WebKit.framework"
+            BlueprintName = "SimpleWebKit without cross-compile"
             ReferencedContainer = "container:SimpleWebKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Development">

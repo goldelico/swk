@@ -380,19 +380,19 @@
 		29B97314FDCFA39411CA2CEA /* BrowserTester */ = {
 			isa = PBXGroup;
 			children = (
-				EE27270005426A7F0000013C /* mySTEP.make */,
-				EEF7EAE316DB51E500CD94B5 /* SimpleWebKit.qcodeproj */,
-				EE139CE11A193C5300546945 /* WKBrowser.qcodeproj */,
-				EEF7EAE416DB51E500CD94B5 /* SWKBrowser.qcodeproj */,
-				EE139CE01A193C4800546945 /* SWKBrowserX11.qcodeproj */,
-				EE8721B30D0214A900B2037D /* GNUmakefile */,
 				EE4440B30BDBEA980031F556 /* ChangeLog */,
 				EEFA7D870E29FFEF00B86693 /* README */,
 				EECC1E600BA14EA20001C219 /* ToDo */,
-				EE2AED7E1356C44D002C0687 /* WebKit */,
-				EE5EBB580A188F970045B88D /* SWKBrowser */,
+				EE27270005426A7F0000013C /* mySTEP.make */,
+				EEF7EAE316DB51E500CD94B5 /* SimpleWebKit.qcodeproj */,
+				EEF7EAE416DB51E500CD94B5 /* SWKBrowser.qcodeproj */,
+				EE139CE01A193C4800546945 /* SWKBrowserX11.qcodeproj */,
+				EE139CE11A193C5300546945 /* WKBrowser.qcodeproj */,
+				EE8721B30D0214A900B2037D /* GNUmakefile */,
 				EE4535590A166D4400C660D5 /* Mac Frameworks */,
 				EE29D8D8058A38830035639B /* Products */,
+				EE5EBB580A188F970045B88D /* SWKBrowser */,
+				EE2AED7E1356C44D002C0687 /* WebKit */,
 			);
 			name = BrowserTester;
 			sourceTree = "<group>";
