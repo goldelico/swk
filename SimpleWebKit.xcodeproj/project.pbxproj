@@ -1032,8 +1032,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1044,8 +1048,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/WKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1056,6 +1063,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = WebKitBrowser;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1066,8 +1075,12 @@
 		EE01D4630B7786570089A538 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1075,8 +1088,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/WKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1085,6 +1101,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = WebKitBrowser;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1095,9 +1113,13 @@
 		EE139CF71A193C6800546945 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1107,9 +1129,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-rpath",
 					/usr/local/QuantumSTEP/System/Library/Frameworks,
@@ -1118,6 +1142,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1128,9 +1154,13 @@
 		EE139CF81A193C6800546945 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1138,9 +1168,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowserX11-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-rpath",
 					/usr/local/QuantumSTEP/System/Library/Frameworks,
@@ -1149,6 +1181,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowserX11;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1159,9 +1193,13 @@
 		EE147E890A1666A700E60AF8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1171,9 +1209,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-rpath",
 					/usr/local/QuantumSTEP/System/Library/Frameworks,
@@ -1181,6 +1221,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1191,9 +1233,13 @@
 		EE147E8A0A1666A700E60AF8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1201,9 +1247,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SWKBrowser/SWKBrowser-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-rpath",
 					/usr/local/QuantumSTEP/System/Library/Frameworks,
@@ -1211,6 +1259,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = SWKBrowser;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
 				SYMROOT = build;
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = app;
@@ -1247,6 +1297,7 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1256,13 +1307,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "$(HOME)/build";
 				USE_HEADERMAP = NO;
@@ -1283,19 +1337,23 @@
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
@@ -1316,6 +1374,7 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1325,9 +1384,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sources/SimpleWebKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-rpath",
@@ -1336,6 +1397,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "$(HOME)/build";
 				USE_HEADERMAP = NO;
@@ -1357,15 +1419,18 @@
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SimpleWebKit-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-rpath",
@@ -1374,6 +1439,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = WebKit;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
@@ -1388,18 +1454,38 @@
 		EEEB9D6C09A7586C00626AB7 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				ZERO_LINK = NO;
 			};
 			name = Development;
 		};
 		EEEB9D6D09A7586C00626AB7 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				CODE_SIGN_ENTITLEMENTS = SimpleWebKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				ZERO_LINK = NO;
 			};
 			name = Deployment;
 		};
